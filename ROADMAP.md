@@ -19,6 +19,8 @@ plbunny is being developed in stages. The roadmap is intentionally flexible whil
 - [x] GitHub repository and MIT license
 - [x] Test bot in a real writing community
 - [ ] Broader configuration architecture
+- [ ] Decide initial project website structure
+- [ ] GitHub Pages documentation foundation
 
 ## 🐇 Phase 1 — Prompt System
 **Status: 🔜 Next**
@@ -145,19 +147,47 @@ Sprints should encourage **steady progress**, not turn writing into a race.
 - [ ] Safe defaults
 - [ ] Configuration documentation
 
-## 🏠 Phase 9 — Public Release & Self-Hosting
+## 🌐 Phase 9 — Project Website & Documentation
+**Status: 📋 Planned**
+- [ ] GitHub Pages site
+- [ ] Project homepage
+- [ ] Feature overview
+- [ ] Getting started guide
+- [ ] Bot installation documentation
+- [ ] Self-hosting documentation
+- [ ] Configuration reference
+- [ ] Challenge and sprint guides
+- [ ] FAQ
+- [ ] Roadmap/project status
+- [ ] Contribution guide
+- [ ] License information
+- [ ] Clear distinction between self-hosted and future hosted options
+
+**Website principle:** GitHub Pages should be the public documentation/home layer, while the GitHub repository remains the source-code and project-management home.
+
+The first version does not need a complicated framework. A simple static documentation site is enough to start.
+
+## 🏠 Phase 10 — Public Release, Self-Hosting & Sustainability
 **Status: ⏳ Future**
 - [ ] Installation documentation
 - [ ] Self-hosting guide
 - [ ] Environment/configuration documentation
 - [ ] Database setup and migration documentation
 - [ ] Upgrade/migration strategy
+- [ ] Backup strategy
+- [ ] Docker support
 - [ ] Contribution guidelines
 - [ ] Issue templates
 - [ ] Security review
 - [ ] Public installation flow
 - [ ] Release process
 - [ ] Public beta
+- [ ] Evaluate optional official hosted service
+- [ ] Define hosted-service boundaries
+- [ ] Define sustainable pricing if a hosted service is offered
+- [ ] Document any hosted-only conveniences or premium features
+
+**Sustainability principle:** self-hosting should remain a viable free/open-source path. A future hosted service would exist for convenience and to help fund infrastructure and development, not because the underlying software requires a subscription.
 
 ## 🌱 Ideas for Later
 
@@ -172,6 +202,7 @@ These are deliberately **not commitments**.
 - [ ] Web-based administration
 - [ ] Integrations with other writing tools and publishing platforms
 - [ ] Additional languages/localization
+- [ ] Hosted-service-only conveniences, if a hosted service is eventually offered
 
 ## 🐢 Guiding Principle
 
@@ -184,3 +215,5 @@ The tortoise is useful for persistence.
 Discord can be the clubhouse without having to be the bookshelf.
 
 **The goal is to help writers keep moving while letting them keep their writing where it works best for them.**
+
+And if Plotbunny eventually pays for its own server by feeding a few more rabbits, so much the better. 🐇
