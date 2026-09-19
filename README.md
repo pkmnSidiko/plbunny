@@ -45,6 +45,9 @@ The long-term goal is a self-hostable alternative to the collection of writing-c
 * Challenge opening and closing dates
 * Automatic reminders
 * Participant progress and entry tracking
+* Dedicated challenge announcement channels
+* Writing/submission spaces, including Discord Forums
+* Links to writing hosted elsewhere
 
 #### 📚 Projects & Goals
 * Writing project tracking
@@ -60,6 +63,33 @@ The long-term goal is a self-hostable alternative to the collection of writing-c
 * Optional Discord role integration
 * Community events
 * Server-level configuration
+
+## 📝 Discord is the clubhouse, not necessarily the bookshelf
+
+Discord is useful for the **community layer** of a writing group: conversation, prompts, sprints, announcements, reminders, celebrations, and finding people to write with.
+
+But Discord's fast-moving chat model is not always the best place to keep actual writing.
+
+Writing communities have long used **forums and journals** for text submissions because they give each piece of work a persistent home. A submission can have its own title, discussion, replies, and history instead of disappearing into a busy chat channel.
+
+That is why plbunny is designed around a distinction between **community tools** and **writing spaces**.
+
+A challenge might use:
+
+* 📢 a Discord channel for announcements and reminders
+* ✍️ a Discord Forum channel for participant entries
+* 💬 a regular channel or thread for discussion
+* 📖 a forum or journal elsewhere
+* 🌐 a personal website or writing platform
+* 🔗 another external archive or publishing site
+
+plbunny does not need to own the writing itself. Instead, it can track the participation that matters to a challenge:
+
+> **Ceri → October Daily Drabbles → Day 7 → 183 words → link to the entry**
+
+This keeps the bot focused on prompts, challenges, schedules, progress, goals, and community features while letting writers keep their actual work wherever it works best for them.
+
+**Your writing has a home. Plotbunny helps run the writing community around it.**
 
 ## 🧁 Inspired by the old internet
 
