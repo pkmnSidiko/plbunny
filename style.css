@@ -75,7 +75,7 @@ body {
 .shelf {
     position: relative;
     margin-top: 70px;
-    padding: 26px 24px 34px;
+    padding: 26px 24px 50px;
     border: 10px solid var(--wood);
     border-top-width: 16px;
     border-bottom-width: 18px;
@@ -143,8 +143,8 @@ body {
     box-shadow: 0 7px 10px rgba(34,31,20,.3);
 }
 
-.content {
-    margin-top: 36px;
+.shelf .content {
+    margin-top: 30px;
     padding: 28px;
     border: 2px solid rgba(79, 133, 146, .35);
     border-radius: 18px;
@@ -153,6 +153,12 @@ body {
 }
 
 .content h2 { margin-top: 0; }
+
+.shelf #rabbit-message {
+    margin: 12px 0 0;
+    text-align: center;
+    min-height: 1.4em;
+}
 
 .waterdrop {
     display: inline-block;
@@ -166,7 +172,7 @@ body {
 .rabbit {
     position: absolute;
     right: 34px;
-    bottom: 12px;
+    bottom: 18px;
     font-size: 2.5rem;
     cursor: pointer;
     transition: transform .25s ease, filter .25s ease;
