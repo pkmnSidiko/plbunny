@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plotbunny — a writing-community toolkit for Discord.">
     <title>Plotbunny — Mind the hares.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🐇 Plotbunny</h1>
+    <main class="page">
+        <header class="header">
+            <h1>🐇 Plotbunny</h1>
+            <p class="tagline">Mind the hares.</p>
+        </header>
 
-    <p><strong>Mind the hares.</strong></p>
+        <section class="shelf-scene" aria-label="Plotbunny bookshelf navigation">
+            <div class="cloud one" aria-hidden="true"></div>
+            <div class="cloud two" aria-hidden="true"></div>
 
-    <p>
-        A writing-community toolkit for Discord.
-    </p>
+            <div class="shelf">
+                <nav class="books" aria-label="Main navigation">
+                    <a class="book about" href="#about">About</a>
+                    <a class="book sprints" href="#sprints">Sprints</a>
+                    <a class="book challenges" href="#challenges">Challenges</a>
+                    <a class="book projects" href="#projects">Projects</a>
+                    <a class="book awards" href="#awards">Awards</a>
+                    <a class="book docs" href="https://github.com/pkmnSidiko/plbunny">Docs / GitHub</a>
+                </nav>
+                <div class="shelf-edge" aria-hidden="true"></div>
+                <div class="rabbit" role="button" tabindex="0" aria-label="Pet the Plotbunny">🐇</div>
+            </div>
 
-    <p>
-        Prompts, writing sprints, challenges, goals, projects,
-        and community tools for writers.
-    </p>
+            <p id="rabbit-message" aria-live="polite" style="text-align:center;"></p>
+        </section>
 
-    <hr>
+        <section class="content" id="about">
+            <h2>Welcome to Plotbunny <span class="waterdrop" title="A shiny little water droplet.">💧</span></h2>
+            <p>
+                A writing-community toolkit for Discord: prompts, writing sprints,
+                challenges, projects, goals, and community tools for writers.
+            </p>
+            <p><strong>Early development.</strong> The rabbit is still building the shelves.</p>
+        </section>
 
-    <h2>🚧 Early Development</h2>
-
-    <p>
-        Plotbunny is currently under development.
-    </p>
-
-    <p>
-        <a href="https://github.com/pkmnSidiko/plbunny">
-            View Plotbunny on GitHub
-        </a>
-    </p>
+        <footer>
+            🐇 Mind the hares. 🐢 Follow the tortoise. 📚 Write the story.
+        </footer>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
