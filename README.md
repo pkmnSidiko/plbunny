@@ -115,6 +115,39 @@ The challenge system takes inspiration from the old **`fanfic_bakeoff`** communi
 
 plbunny carries that idea beyond fandom. **Original fiction and fanworks are equally welcome.**
 
+## 🏠 Free to self-host, with hosted options possible later
+
+plbunny is intended to remain **free and open source for communities that want to run it themselves**.
+
+Self-hosting means a community can run its own instance with its own Discord application, bot token, prompt library, schedules, server configuration, and database.
+
+In the future, the project may also offer an **optional hosted service** for communities that would rather not maintain their own bot infrastructure. A hosted service could help cover hosting, backups, maintenance, and development costs while leaving self-hosting available.
+
+The goal is not to put the core writing-community toolkit behind a paywall.
+
+> **The software can be free. The rabbit still has to eat.**
+
+Any hosted service, pricing, and premium features will be documented separately when they actually exist. They are not part of the current early-development release.
+
+## 🌐 The Plotbunny website
+
+The project website and documentation are planned to live on **GitHub Pages**, alongside the source repository.
+
+The website will provide a public home for:
+
+* 📖 User documentation
+* 🐇 Feature guides
+* 🧁 Challenge documentation
+* 🐢 Sprint documentation
+* 🏠 Self-hosting instructions
+* 💻 Installation and configuration guides
+* 🗺️ Roadmap and project status
+* 🤝 Contribution information
+* 📜 Licensing information
+* 🌱 Future hosted-service information, if offered
+
+Keeping the documentation with the code means the project can maintain **one source of truth** rather than maintaining a separate website and repository.
+
 ## 🚧 Project Status
 
 **Current status: Early development**
@@ -133,12 +166,6 @@ See [`ROADMAP.md`](ROADMAP.md) for the current development plan.
 * **Discord Application Commands / Slash Commands**
 
 The project is being designed so individual Discord servers can configure their own schedules, channels, prompt libraries, challenges, and writing activities without changing the bot's source code.
-
-## 🏠 Self-Hosting
-
-Once plbunny reaches public release, communities will be able to run their own instance with their own Discord application, bot token, prompt library, schedules, server configuration, and database.
-
-Self-hosting documentation will be expanded as the project approaches public release.
 
 ## 🤝 Contributing
 
