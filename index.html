@@ -14,7 +14,7 @@
             <p class="tagline">Mind the hares.</p>
         </header>
 
-        <section class="shelf-scene" aria-label="Plotbunny bookshelf">
+        <section class="shelf-scene" aria-label="Plotbunny bookshelf and information">
             <div class="cloud one" aria-hidden="true"></div>
             <div class="cloud two" aria-hidden="true"></div>
 
@@ -71,108 +71,227 @@
                 <div class="shelf-base" aria-hidden="true"></div>
             </div>
 
-            <section class="content" id="about">
-                <h2>Welcome to Plotbunny <span class="waterdrop" title="A shiny little water droplet.">💧</span></h2>
-                <p>
-                    A writing-community toolkit for Discord: prompts, writing sprints,
-                    challenges, projects, goals, and community tools for writers.
-                </p>
-                <p><strong>Early development.</strong> The rabbit is still building the shelves.</p>
-                <p id="rabbit-message" aria-live="polite"></p>
-            </section>
-        </section>
+            <div class="content-column">
+                <section class="content" id="about">
+                    <h2>Welcome to Plotbunny <span class="waterdrop" title="A shiny little water droplet.">💧</span></h2>
+                    <p>
+                        A writing-community toolkit for Discord: prompts, writing sprints,
+                        challenges, projects, goals, and community tools for writers.
+                    </p>
+                    <p><strong>Early development.</strong> The rabbit is still building the shelves.</p>
+                    <p id="rabbit-message" aria-live="polite"></p>
+                </section>
 
-        <section class="content roadmap" id="roadmap">
-            <h2>☕🌙 Midnight Coffeehouse Roadmap</h2>
-            <p><em>Plotbunny exists because the Coffeehouse needs it.</em></p>
+                <section class="content roadmap" id="roadmap">
+                    <h2>🗺️ Plotbunny Roadmap</h2>
+                    <p><em>Mind the hares. Follow the tortoise. Write the story.</em></p>
+                    <p>plbunny is being developed in stages. The roadmap is intentionally flexible while the architecture is tested in a real writing community.</p>
 
-            <h3>🚪 Phase 1 — Open the Doors <small>📍 Current</small></h3>
-            <ul>
-                <li>⬜ Finish server structure</li>
-                <li>⬜ Finalize rules &amp; guidelines</li>
-                <li>⬜ Finish onboarding</li>
-                <li>⬜ Set up introductions and community spaces</li>
-                <li>⬜ Set up writing discussion and sharing spaces</li>
-                <li>⬜ Set up book/media discussion</li>
-                <li>⬜ Invite our first members</li>
-            </ul>
-            <p><strong>Goal:</strong> Make Midnight Coffeehouse feel like somewhere people actually want to hang out.</p>
+                    <h3>🐾 Phase 0 — Foundation <small>🟢 In progress</small></h3>
+                    <ul>
+                        <li>☑️ Discord application and bot</li>
+                        <li>☑️ Python project structure</li>
+                        <li>☑️ Slash-command support</li>
+                        <li>☑️ SQLite database</li>
+                        <li>☑️ Basic prompt library</li>
+                        <li>☑️ <code>/prompt</code></li>
+                        <li>☑️ Per-server XP storage</li>
+                        <li>☑️ <code>/xp</code></li>
+                        <li>☑️ Staff-awarded XP</li>
+                        <li>☑️ <code>/give_xp</code></li>
+                        <li>☑️ GitHub repository and MIT license</li>
+                        <li>☑️ Test bot in a real writing community</li>
+                        <li>⬜ Broader configuration architecture</li>
+                        <li>⬜ Decide initial project website structure</li>
+                        <li>⬜ GitHub Pages documentation foundation</li>
+                    </ul>
 
-            <h3>☕ Phase 2 — Find Our Rhythm <small>🔜 Next</small></h3>
-            <ul>
-                <li>⬜ Regular writing sprints</li>
-                <li>⬜ Casual writing sessions</li>
-                <li>⬜ Writing discussions and prompt sharing</li>
-                <li>⬜ Book discussions</li>
-                <li>⬜ Community events</li>
-                <li>⬜ Low-pressure challenges</li>
-                <li>⬜ Listen to member feedback and adjust the server</li>
-            </ul>
-            <p><strong>Goal:</strong> Build community traditions, not a giant schedule nobody uses.</p>
+                    <h3>🐇 Phase 1 — Prompt System <small>🔜 Next</small></h3>
+                    <ul>
+                        <li>⬜ Prompt library data model</li>
+                        <li>⬜ Prompt categories/tags</li>
+                        <li>⬜ Prompt archives</li>
+                        <li>⬜ Community-submitted prompts</li>
+                        <li>⬜ Prompt approval/moderation flow</li>
+                        <li>⬜ Scheduled prompts</li>
+                        <li>⬜ Per-server prompt schedules and libraries</li>
+                        <li>⬜ Prompt management commands</li>
+                        <li>⬜ Prompt history / avoid-repeat logic</li>
+                    </ul>
 
-            <h3>🐇 Phase 3 — Bring in the Plotbunny <small>🔧 In Development</small></h3>
-            <ul>
-                <li>⬜ Deploy Plotbunny to Midnight Coffeehouse</li>
-                <li>⬜ Writing prompts</li>
-                <li>⬜ Writing sprints</li>
-                <li>⬜ Challenges</li>
-                <li>⬜ Project tracking</li>
-                <li>⬜ Writing goals</li>
-                <li>⬜ XP &amp; awards</li>
-                <li>⬜ Server-specific configuration</li>
-                <li>⬜ Test features with Coffeehouse members</li>
-                <li>⬜ Gather feedback and fix what doesn't work</li>
-            </ul>
-            <p><strong>Goal:</strong> Build tools that are actually useful to our writers.</p>
+                    <h3>🧁 Phase 2 — Challenge System <small>🧠 Architecture/design</small></h3>
+                    <ul>
+                        <li>⬜ Challenge data model</li>
+                        <li>⬜ Start/end dates and configurable duration</li>
+                        <li>⬜ Daily, weekly, biweekly, and monthly cadence</li>
+                        <li>⬜ Future custom cadence</li>
+                        <li>⬜ Minimum words per entry</li>
+                        <li>⬜ Minimum total word count</li>
+                        <li>⬜ Optional maximums</li>
+                        <li>⬜ Themes, Bakeoff ingredients, and constraints</li>
+                        <li>⬜ Timezone handling</li>
+                        <li>⬜ Completion requirements</li>
+                        <li>⬜ Challenge participants and entry records</li>
+                        <li>⬜ Entry-window and missed-entry rules</li>
+                        <li>⬜ Late-entry policy</li>
+                        <li>⬜ Progress calculation</li>
+                        <li>⬜ Challenge completion and archives</li>
+                        <li>⬜ Automatic reminders</li>
+                        <li>⬜ Challenge announcement channel configuration</li>
+                        <li>⬜ Writing/submission space configuration</li>
+                        <li>⬜ Discord Forum channel support</li>
+                        <li>⬜ Regular channel/thread support</li>
+                        <li>⬜ External writing-link support</li>
+                        <li>⬜ Optional linking of Discord Forum posts to challenge entries</li>
+                        <li>⬜ Clear separation between challenge tracking and stored writing</li>
+                    </ul>
+                    <p><strong>Design principle:</strong> challenge duration, entry cadence, and word-count requirements remain separate settings.</p>
+                    <p><strong>Writing-space principle:</strong> plbunny tracks participation and progress; it does not need to store the actual prose.</p>
 
-            <h3>🧁 Phase 4 — Grow the Coffeehouse <small>🌱 Later</small></h3>
-            <ul>
-                <li>⬜ Recurring events</li>
-                <li>⬜ Seasonal challenges</li>
-                <li>⬜ Community writing projects</li>
-                <li>⬜ Themed events</li>
-                <li>⬜ Member-led activities</li>
-                <li>⬜ Optional achievements</li>
-                <li>⬜ Community traditions</li>
-                <li>⬜ Refine onboarding as we grow</li>
-            </ul>
-            <p><strong>Goal:</strong> Let the community develop its own culture.</p>
+                    <h3>🐢 Phase 3 — Writing Sprints <small>📋 Planned</small></h3>
+                    <ul>
+                        <li>⬜ Sprint data model</li>
+                        <li>⬜ Start/end timer</li>
+                        <li>⬜ Individual sprints</li>
+                        <li>⬜ Group sprints</li>
+                        <li>⬜ Sprint participation</li>
+                        <li>⬜ Optional starting/ending word counts</li>
+                        <li>⬜ Word-count progress</li>
+                        <li>⬜ Sprint history and statistics</li>
+                        <li>⬜ Optional streak tracking</li>
+                        <li>⬜ Tortoise-themed sprint messaging</li>
+                    </ul>
+                    <p><strong>Principle:</strong> Sprints should encourage <strong>steady progress</strong>, not turn writing into a race.</p>
 
-            <h3>📚 Phase 5 — Build the Bookshelf <small>🌐 Future</small></h3>
-            <ul>
-                <li>⬜ Launch the Plotbunny website</li>
-                <li>⬜ Document the bot</li>
-                <li>⬜ Create challenge &amp; sprint guides</li>
-                <li>⬜ Create self-hosting documentation</li>
-                <li>⬜ Organize community resources</li>
-                <li>⬜ Add the interactive bookshelf</li>
-                <li>⬜ Establish Midnight Coffeehouse as Plotbunny's home community</li>
-            </ul>
-            <p><strong>Goal:</strong> Make our resources easy to find, use, and share.</p>
+                    <h3>📚 Phase 4 — Projects <small>📋 Planned</small></h3>
+                    <ul>
+                        <li>⬜ Project data model</li>
+                        <li>⬜ Create/edit/archive projects</li>
+                        <li>⬜ Project status</li>
+                        <li>⬜ Project word counts</li>
+                        <li>⬜ Project goals and deadlines</li>
+                        <li>⬜ Progress summaries</li>
+                        <li>⬜ Multiple projects per writer</li>
+                        <li>⬜ Optional sprint/challenge integration</li>
+                        <li>⬜ Links to external project homes</li>
+                    </ul>
 
-            <h3>🌎 Phase 6 — Share What We've Learned <small>🐣 Someday</small></h3>
-            <ul>
-                <li>⬜ Invite other writing communities to try Plotbunny</li>
-                <li>⬜ Gather outside feedback</li>
-                <li>⬜ Identify what should become general-purpose</li>
-                <li>⬜ Improve configuration and documentation</li>
-                <li>⬜ Support self-hosting</li>
-                <li>⬜ Consider public releases</li>
-            </ul>
-            <p><strong>Goal:</strong> Let Plotbunny grow organically from something <em>we needed</em> into something other writing communities might find useful.</p>
+                    <h3>🎯 Phase 5 — Goals <small>📋 Planned</small></h3>
+                    <ul>
+                        <li>⬜ Personal writing goals</li>
+                        <li>⬜ Project-specific goals</li>
+                        <li>⬜ Word-count and time-based goals</li>
+                        <li>⬜ Deadline tracking</li>
+                        <li>⬜ Progress summaries</li>
+                        <li>⬜ Goal completion</li>
+                        <li>⬜ Optional reminders</li>
+                    </ul>
 
-            <h3>☕ The Coffeehouse Rule</h3>
-            <blockquote>
-                <strong>Midnight Coffeehouse comes first.</strong><br><br>
-                Plotbunny exists because this community needed better tools.
-                The Coffeehouse isn't a test audience for a pre-existing product.
-                It's the community the tools are being built for.<br><br>
-                We'll build the Coffeehouse first, listen to the people who use it,
-                and let the bot grow alongside the community.<br><br>
-                <strong>No feature exists just because we can build it.</strong><br><br>
-                🐢 Slow growth is still growth.<br>
-                🐇 And occasionally, a plotbunny runs off with an idea.
-            </blockquote>
+                    <h3>🏆 Phase 6 — XP, Awards &amp; Community Progression <small>🟡 Prototype exists</small></h3>
+                    <ul>
+                        <li>☑️ Per-server XP</li>
+                        <li>☑️ XP storage</li>
+                        <li>☑️ Staff-awarded XP</li>
+                        <li>⬜ Automatic XP events</li>
+                        <li>⬜ XP rules/configuration</li>
+                        <li>⬜ XP history</li>
+                        <li>⬜ Awards/achievements</li>
+                        <li>⬜ Award criteria and history</li>
+                        <li>⬜ Optional Discord role integration</li>
+                        <li>⬜ Progress/leaderboard commands</li>
+                        <li>⬜ Server-specific progression settings</li>
+                    </ul>
+                    <p><strong>Design principle:</strong> XP measures progression; awards represent specific achievements or recognition.</p>
+
+                    <h3>🗓️ Phase 7 — Events &amp; Community Tools <small>📋 Planned</small></h3>
+                    <ul>
+                        <li>⬜ Writing events</li>
+                        <li>⬜ Scheduled write-ins</li>
+                        <li>⬜ Event reminders</li>
+                        <li>⬜ Event participation</li>
+                        <li>⬜ Community milestones</li>
+                        <li>⬜ Server-wide goals</li>
+                        <li>⬜ Utility commands</li>
+                    </ul>
+
+                    <h3>🛠️ Phase 8 — Server Configuration <small>📋 Planned</small></h3>
+                    <ul>
+                        <li>⬜ Server configuration model</li>
+                        <li>⬜ Configurable channels and roles</li>
+                        <li>⬜ Configurable writing/submission spaces</li>
+                        <li>⬜ Configurable schedules</li>
+                        <li>⬜ Configurable XP rules</li>
+                        <li>⬜ Configurable challenge defaults</li>
+                        <li>⬜ Permission-aware administration</li>
+                        <li>⬜ Configuration commands</li>
+                        <li>⬜ Safe defaults</li>
+                        <li>⬜ Configuration documentation</li>
+                    </ul>
+
+                    <h3>🌐 Phase 9 — Project Website &amp; Documentation <small>📋 Planned</small></h3>
+                    <ul>
+                        <li>☑️ GitHub Pages site</li>
+                        <li>⬜ Project homepage</li>
+                        <li>⬜ Feature overview</li>
+                        <li>⬜ Getting started guide</li>
+                        <li>⬜ Bot installation documentation</li>
+                        <li>⬜ Self-hosting documentation</li>
+                        <li>⬜ Configuration reference</li>
+                        <li>⬜ Challenge and sprint guides</li>
+                        <li>⬜ FAQ</li>
+                        <li>⬜ Roadmap/project status</li>
+                        <li>⬜ Contribution guide</li>
+                        <li>⬜ License information</li>
+                        <li>⬜ Clear distinction between self-hosted and future hosted options</li>
+                    </ul>
+                    <p><strong>Website principle:</strong> GitHub Pages should be the public documentation/home layer, while the GitHub repository remains the source-code and project-management home.</p>
+
+                    <h3>🏠 Phase 10 — Public Release, Self-Hosting &amp; Sustainability <small>⏳ Future</small></h3>
+                    <ul>
+                        <li>⬜ Installation documentation</li>
+                        <li>⬜ Self-hosting guide</li>
+                        <li>⬜ Environment/configuration documentation</li>
+                        <li>⬜ Database setup and migration documentation</li>
+                        <li>⬜ Upgrade/migration strategy</li>
+                        <li>⬜ Backup strategy</li>
+                        <li>⬜ Docker support</li>
+                        <li>⬜ Contribution guidelines</li>
+                        <li>⬜ Issue templates</li>
+                        <li>⬜ Security review</li>
+                        <li>⬜ Public installation flow</li>
+                        <li>⬜ Release process</li>
+                        <li>⬜ Public beta</li>
+                        <li>⬜ Evaluate optional official hosted service</li>
+                        <li>⬜ Define hosted-service boundaries</li>
+                        <li>⬜ Define sustainable pricing if a hosted service is offered</li>
+                        <li>⬜ Document any hosted-only conveniences or premium features</li>
+                    </ul>
+                    <p><strong>Sustainability principle:</strong> self-hosting should remain a viable free/open-source path. A future hosted service would exist for convenience and to help fund infrastructure and development, not because the underlying software requires a subscription.</p>
+
+                    <h3>🌱 Ideas for Later</h3>
+                    <ul>
+                        <li>⬜ Custom challenge types</li>
+                        <li>⬜ More advanced statistics</li>
+                        <li>⬜ Server-wide writing events</li>
+                        <li>⬜ Optional competitive leaderboards</li>
+                        <li>⬜ More award types</li>
+                        <li>⬜ Import/export tools</li>
+                        <li>⬜ Additional storage backends</li>
+                        <li>⬜ Web-based administration</li>
+                        <li>⬜ Integrations with other writing tools and publishing platforms</li>
+                        <li>⬜ Additional languages/localization</li>
+                        <li>⬜ Hosted-service-only conveniences, if a hosted service is eventually offered</li>
+                    </ul>
+
+                    <h3>🐢 Guiding Principle</h3>
+                    <p>plbunny is not intended to make writers write faster at all costs.</p>
+                    <p>The hare is useful for inspiration.</p>
+                    <p>The tortoise is useful for persistence.</p>
+                    <p>Discord can be the clubhouse without having to be the bookshelf.</p>
+                    <p><strong>The goal is to help writers keep moving while letting them keep their writing where it works best for them.</strong></p>
+                    <p>And if Plotbunny eventually pays for its own server by feeding a few more rabbits, so much the better. 🐇</p>
+                </section>
+            </div>
         </section>
 
         <footer>
