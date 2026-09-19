@@ -50,8 +50,24 @@ plbunny is being developed in stages. The roadmap is intentionally flexible whil
 - [ ] Progress calculation
 - [ ] Challenge completion and archives
 - [ ] Automatic reminders
+- [ ] Challenge announcement channel configuration
+- [ ] Writing/submission space configuration
+- [ ] Discord Forum channel support
+- [ ] Regular channel/thread support
+- [ ] External writing-link support
+- [ ] Optional linking of Discord Forum posts to challenge entries
+- [ ] Clear separation between challenge tracking and stored writing
 
 **Design principle:** challenge duration, entry cadence, and word-count requirements remain separate settings.
+
+**Writing-space principle:** plbunny tracks participation and progress; it does not need to store the actual prose. Writers should be able to keep their work in a Discord Forum, thread, journal, forum, personal site, or other writing platform.
+
+A typical challenge setup may recommend:
+
+> 📢 **Announcement channel** — challenge information, rules, deadlines, and reminders  
+> ✍️ **Writing space** — preferably a Forum channel for participant entries, but other spaces can be used
+
+The recommendation is not a requirement. The goal is to support the way writing communities already organize and archive text.
 
 ## 🐢 Phase 3 — Writing Sprints
 **Status: 📋 Planned**
@@ -78,6 +94,7 @@ Sprints should encourage **steady progress**, not turn writing into a race.
 - [ ] Progress summaries
 - [ ] Multiple projects per writer
 - [ ] Optional sprint/challenge integration
+- [ ] Links to external project homes
 
 ## 🎯 Phase 5 — Goals
 **Status: 📋 Planned**
@@ -119,6 +136,7 @@ Sprints should encourage **steady progress**, not turn writing into a race.
 **Status: 📋 Planned**
 - [ ] Server configuration model
 - [ ] Configurable channels and roles
+- [ ] Configurable writing/submission spaces
 - [ ] Configurable schedules
 - [ ] Configurable XP rules
 - [ ] Configurable challenge defaults
@@ -152,7 +170,7 @@ These are deliberately **not commitments**.
 - [ ] Import/export tools
 - [ ] Additional storage backends
 - [ ] Web-based administration
-- [ ] Integrations with other writing tools
+- [ ] Integrations with other writing tools and publishing platforms
 - [ ] Additional languages/localization
 
 ## 🐢 Guiding Principle
@@ -163,4 +181,6 @@ The hare is useful for inspiration.
 
 The tortoise is useful for persistence.
 
-**The goal is to help writers keep moving.**
+Discord can be the clubhouse without having to be the bookshelf.
+
+**The goal is to help writers keep moving while letting them keep their writing where it works best for them.**
