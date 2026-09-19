@@ -114,13 +114,44 @@ body {
 
 .shelf-label {
     min-width: 125px;
-    align-self: center;
-    color: rgba(255,247,222,.86);
-    font-size: .85rem;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 1px 1px 2px #4b2817;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
 }
+
+.section-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    min-height: 112px;
+    padding: 10px 8px;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: .86rem;
+    font-weight: bold;
+    letter-spacing: .03em;
+    text-shadow: 1px 1px 2px rgba(50,30,15,.55);
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 5px 8px 8px 5px;
+    box-shadow: 5px 5px 8px rgba(30, 28, 20, .3), inset 3px 0 0 rgba(255,255,255,.18);
+    transform: rotate(-2deg);
+    transition: transform .2s ease, filter .2s ease, box-shadow .2s ease;
+}
+
+.section-book:hover,
+.section-book:focus-visible {
+    transform: translateY(-10px) rotate(0deg) scale(1.04);
+    filter: brightness(1.12);
+    outline: none;
+    box-shadow: 7px 10px 12px rgba(30, 28, 20, .34), 0 0 14px rgba(255,255,255,.4);
+}
+
+.tortoise-book { background: linear-gradient(90deg, #3e7047, #6da66f); }
+.bakeoff-book { background: linear-gradient(90deg, #a6533c, #d4875e); transform: rotate(2deg); }
+.writer-book { background: linear-gradient(90deg, #555d9a, #8189c3); transform: rotate(-3deg); }
+.community-book { background: linear-gradient(90deg, #8d6a2d, #c09a4a); transform: rotate(2deg); }
 
 .shelf-note {
     display: flex;
