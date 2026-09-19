@@ -6,9 +6,13 @@ import discord
 from discord import app_commands
 from dotenv import load_dotenv
 
+from database import initialize_database
+
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
+
+initialize_database()
 
 with open("prompts.json", "r", encoding="utf-8") as file:
     prompt_data = json.load(file)
