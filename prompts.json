@@ -1,0 +1,16 @@
+{
+  "general": [
+    {
+      "id": 1,
+      "prompt": "Your character receives a letter addressed to someone who died twenty years ago."
+    },
+    {
+      "id": 2,
+      "prompt": "The town has forgotten why the bells ring every midnight."
+    },
+    {
+      "id": 3,
+      "prompt": "Someone leaves a package on your character's doorstep. There is no return address, but the package is warm."
+    }
+  ]
+}
