@@ -18,9 +18,13 @@ plbunny is being developed in stages. The roadmap is intentionally flexible whil
 - [x] `/give_xp`
 - [x] GitHub repository and MIT license
 - [x] Test bot in a real writing community
-- [ ] Broader configuration architecture
-- [ ] Decide initial project website structure
-- [ ] GitHub Pages documentation foundation
+- [x] Broader configuration architecture
+- [x] Decide initial project website structure
+- [x] GitHub Pages documentation foundation
+
+The first configuration layer is now working in the test server. Plotbunny stores server-specific settings in SQLite and exposes administrator-only configuration commands for timezone, XP, writing channel, and announcement channel.
+
+The initial GitHub Pages site is also established as a simple static project home and roadmap. It will grow into the public documentation layer as features mature.
 
 ## 🐇 Phase 1 — Prompt System
 **Status: 🔜 Next**
@@ -135,22 +139,28 @@ Sprints should encourage **steady progress**, not turn writing into a race.
 - [ ] Utility commands
 
 ## 🛠️ Phase 8 — Server Configuration
-**Status: 📋 Planned**
-- [ ] Server configuration model
+**Status: 🟡 Foundation implemented**
+- [x] Server configuration model
+- [x] Configurable writing/submission spaces
+- [x] Configurable announcement channel
+- [x] Configurable timezone
+- [x] Configurable XP enable/disable
 - [ ] Configurable channels and roles
-- [ ] Configurable writing/submission spaces
 - [ ] Configurable schedules
 - [ ] Configurable XP rules
 - [ ] Configurable challenge defaults
-- [ ] Permission-aware administration
-- [ ] Configuration commands
-- [ ] Safe defaults
+- [x] Permission-aware administration
+- [x] Configuration commands
+- [x] Safe defaults
 - [ ] Configuration documentation
 
+The initial configuration architecture is deliberately small. It establishes the per-server persistence and administration patterns that later features can build on without hard-coding a particular community's setup.
+
 ## 🌐 Phase 9 — Project Website & Documentation
-**Status: 📋 Planned**
-- [ ] GitHub Pages site
-- [ ] Project homepage
+**Status: 🟡 Foundation implemented**
+- [x] GitHub Pages site
+- [x] Initial static project homepage
+- [x] Roadmap/project status
 - [ ] Feature overview
 - [ ] Getting started guide
 - [ ] Bot installation documentation
@@ -158,7 +168,6 @@ Sprints should encourage **steady progress**, not turn writing into a race.
 - [ ] Configuration reference
 - [ ] Challenge and sprint guides
 - [ ] FAQ
-- [ ] Roadmap/project status
 - [ ] Contribution guide
 - [ ] License information
 - [ ] Clear distinction between self-hosted and future hosted options
